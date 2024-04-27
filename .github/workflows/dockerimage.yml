@@ -1,7 +1,8 @@
 # Increase number to trigger CI -> 1
 name: The showdown
 on:
-  push: {}
+  push:
+  workflow_dispatch:
 jobs:
   build_no_cache:
     runs-on: ubuntu-latest
